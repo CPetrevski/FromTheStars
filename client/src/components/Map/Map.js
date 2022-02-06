@@ -6,12 +6,12 @@ import LocationMarkerStorm from '../LocationMarker/locationMarkerStorm';
 
 const Map = ({ eventData, center, zoom}) => {
     const classes = useStyles();
-    const markers = eventData.map(ev => {
-        // if (ev.categories[0].id === "wildfires") {
-        //     return <LocationMarker lat={ev.geometry[4].coordinates[1]} lng={ev.geometry[0].coordinates[0]} />
+    const markers = eventData.map(event => {
+        // if (event.categories[0].id === "wildfires") {
+        //     return <LocationMarker  lat={event.geometry[4].coordinates[1]} lng={event.geometry[0].coordinates[0]} />
         // }
-        // if (ev.categories[0].id === "severeStorms") {
-        //     return <LocationMarkerStorm lat={ev.geometry[4].coordinates[1]} lng={ev.geometry[0].coordinates[0]} />
+        // if (event.categories[0].id === "severeStorms") {
+        //     return <LocationMarkerStorm  lat={event.geometry[4].coordinates[1]} lng={event.geometry[0].coordinates[0]} />
         // }
         // return null
     })

@@ -19,7 +19,7 @@ app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 // mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`))).catch((error) => console.log(error.message));
 mongoose.connect(
@@ -29,5 +29,12 @@ mongoose.connect(
       useUnifiedTopology: true,
     },
   );
+
+  mongoose.connection.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+    });
+  });
 
 // mongoose.set('useFindAndModify', false);

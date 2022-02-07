@@ -2,7 +2,7 @@
   "name": "FromTheStars",
   "version": "1.0.0",
   "description": "From The Stars - MERN Stack Single-Page Application",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",

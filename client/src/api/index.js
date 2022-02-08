@@ -11,7 +11,7 @@ API.interceptors.request.use((req) => {
 });
 
 // const url = 'http://localhost:5000/posts';
-// const url = 'https://from-the-stars.herokuapp.com/posts';
+const url = 'https://infinite-sands-88122.herokuapp.com//posts';
 
 export const fetchPosts = () => API.get('/posts');
 export const createPost = (newPost) => API.post('/posts', newPost);

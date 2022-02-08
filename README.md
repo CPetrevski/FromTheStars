@@ -41,10 +41,10 @@ for both client and server side. Create a .env file and copy the .env.example fi
 
 ## Links
 
-<a href="#">GitHub Repo</a> 
+<a href="https://github.com/CPetrevski/FromTheStars">GitHub Repo</a> 
 <br />
 <br />
-<a href="#">Live Heorku App</a> 
+<a href="https://infinite-sands-88122.herokuapp.com/">Live Heorku App</a> 
 <br />
 <br />
-<a href="#">Slideshow</a> 
+<a href="https://docs.google.com/presentation/d/1cIBwTk2Wuw38VrPSS7mV-rc6ZMewKB911yXKOjbCXCE/edit?usp=sharing">Slideshow</a> 
